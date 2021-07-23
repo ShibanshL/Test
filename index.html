@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="sub_container">
+            <div class="main_part">
+                <div class="sub_caurosel">
+                    <div class="caurosel_part">
+                        <div class="sub">
+                            <img src="img3.png" class="image" alt="error">
+                            <img src="img4.png" class="image" alt="error">
+                            <img src="img5.png" class="image" alt="error">
+                            <img src="img1.png" class="image" alt="error">
+                            <img src="img2.png" class="image" alt="error">
+                        </div>
+                    </div>
+                    <div class="bottom_images">
+                        <img src="img3.png" class="imagen" alt="error">
+                        <img src="img4.png" class="imagen" alt="error">
+                        <img src="img5.png" class="imagen" alt="error">
+                        <img src="img1.png" class="imagen" alt="error">
+                        <img src="img2.png" class="imagen" alt="error">
+                    </div>
+                </div>
+                <div class="text_part">
+                    <div class="main_text">
+                        <h1>Upholstered Sofa</h1>
+                        <h2>Kyara Upholstered Standard Bed by Zip Code</h2>
+                        <p>
+                            Anchor your living room in suphisticated style and impeccable confort with single addition. Perfectly balancing wood accents with fabric upholstery.
+                        </p>
+                    </div>
+                    <div class="mid_part">
+                        <div class="sub_midpart">
+                            <div class="rating_star">
+                                <div class="stars" data-stars="1">
+                                    <svg height="25" width="23" class="star rating" data-rating="1">
+                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                                </svg>
+                                <svg height="25" width="23" class="star rating" data-rating="2">
+                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                                </svg>
+                                <svg height="25" width="23" class="star rating" data-rating="3">
+                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                                </svg>
+                                <svg height="25" width="23" class="star rating" data-rating="4">
+                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                                </svg>
+                                <svg height="25" width="23" class="star rating" data-rating="5">
+                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <p><span>(5.0)</span>review based on 250</p>
+                            <h2><a href="#">Submit Review</a></h2>
+                        </div>
+                        <h1>$567</h1>
+                    </div>
+                    <div class="all_buttons">
+                        <div class="sub_texts">
+                            <img src="clock.png" alt="error" class="img1">
+                            <p>Dispatched in 7 woking days</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart">ADD TO CART</button>
+                            <button class="wishlist">ADD TO WISHLIST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_part">
+                <div class="sub_sub">
+                    <ul>
+                        <li>
+                            <img src="payment.png" class="icons" alt="error">
+                            <div class="contents">
+                                <h1>Secur Payment</h1>
+                                <p>Don't worry your money is in secure places</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="truck.png" class="icons" alt="error">
+                            <div class="contents">
+                                <h1>Fast and free delivery</h1>
+                                <p>Home delivery for 15$, For free for order over 250$</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="box.png" class="icons" alt="error">
+                            <div class="contents">
+                                <h1>Return Policy</h1>
+                                <p>No hasstle return policies</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="img_control">
+            <div class="left"><img src="left.png" alt="" class="left"></div>
+            <div class="right"><img src="right1.png" alt="" class="right"></div>
+        </div>
+   
+    </div>
+    <script>
+        const starEls = document.querySelectorAll('.star.rating');
+        starEls.forEach(star => {
+        star.addEventListener('click', function(e) {
+            let starEl = e.currentTarget;
+            console.log(starEl.parentNode.dataset.stars + ", " + starEl.dataset.rating);
+            starEl.parentNode.setAttribute('data-stars', starEl.dataset.rating);
+        });
+        })
+        
+        
+    </script>
+    
+</body>
+</html>
